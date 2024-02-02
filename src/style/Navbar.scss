@@ -1,0 +1,186 @@
+@import "color";
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 1rem 0;
+    background-color: $Darkprimary ;
+    align-items: center;
+    width: 100%;
+    
+
+    @media screen and (max-width:480px) {
+        background-color: $primary ;
+     
+
+    }
+
+
+    .ham {
+        position: fixed;
+        top: 1.5rem;
+        right: 1rem;
+        display: none;
+       
+        @media screen and (max-width:480px) {
+           
+            display: unset;
+            width: 45px;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+
+        }
+    }
+
+    .mobNav {
+        display: none;
+
+        @media screen and (max-width:480px) {
+            transition: display 1s ease;
+            display: flex;
+            //    align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 5.8rem;
+            right: 0;
+            z-index: 1;
+            background: $WindowLightprimary;
+            height: 100vh;
+            width: 100%;
+
+            .msers {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    border-radius: 50%;
+                    width: 150px;
+                    height: 150px;
+                    margin-top: 2rem;
+                }
+
+                span {
+                    margin-top: 5px;
+                    font-size: 1.3rem;
+                    font-weight: 700;
+                }
+
+            }
+
+            .navLink {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                margin: 15px 0;
+
+
+                .link {
+                    margin-left: 5px;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    color: $darkTColor;
+                    font-weight: 600;
+                    padding: 10px 0;
+                    cursor: pointer;
+                    width: 100%;
+
+
+                    &:hover {
+                        background: $Lightprimary;
+
+                    }
+
+
+                }
+
+                .log {
+                    width: 100%;
+                    padding: 10px 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+                    border-bottom: 1px solid rgb(168, 158, 158);
+
+                    img {
+                        width: 50px;
+
+                    }
+
+                    span {
+                        font-size: 1.2rem;
+                        color: $darkTColor;
+                        font-weight: 600;
+
+                    }
+
+                    &:hover {
+                        background: $Lightprimary;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+
+
+    .logo {
+        color: white;
+        font-weight: 800;
+        margin: 1rem;
+        font-size: 1.3rem;
+
+
+
+
+    }
+
+    .user {
+        @media screen and (max-width:480px) {
+            display: none;
+
+        }
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+
+        }
+
+        span {
+            font-weight: bold;
+            color: $secondary;
+        }
+
+        button {
+            padding: 14px;
+            border-radius: 4px;
+            background-color: $primary;
+            color: white;
+            font-weight: 900;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $XDarkprimary;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.Sidebar{
+    flex:1;
+    border-right: 1px solid black;
+    position: relative;
+    
+
+}
+// ::-webkit-scrollbar{
+//     width: 1rem;
+// }
+
+// .Sidebar {
+//     flex: 1;
+//     border-right: 1px solid black;
+//     position: relative;
+  
+//     /* Add media query for screens with a maximum width of 768px (adjust as needed) */
+//     @media screen and (max-width: 768px) {
+//       width: 100%; /* Take up full width on small screens */
+//       border-right: none; /* Remove border on small screens */
+//     }
+//   }
+

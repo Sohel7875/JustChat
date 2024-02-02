@@ -1,0 +1,115 @@
+@import "color";
+
+.Container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $secondary;
+        box-shadow: 7px 7px 7px rgba($color: #000000, $alpha: 0.5);
+        width: 25rem;
+        padding: 5rem;
+        border-radius: 1rem;
+        
+        @media screen and (max-width:480px) {
+            height: 90vh;
+            border-radius: 50px;
+            
+        }
+
+        h1{
+            text-align: center;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        p{
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: smaller;
+            
+        }
+
+        form{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 90%;
+
+            @media screen and (max-width:480px) {
+             width: 300px;
+            
+                
+            }
+
+            input{
+                padding: 0.5rem;
+                
+                border: none;
+                outline: none;
+                border-bottom: 1px solid black;             
+            } 
+
+            .filehandle{
+            
+               input{
+                display: none;
+               }
+               label{
+                display: flex;
+                align-items: center;
+
+                img{
+                    width: 2rem;
+                   }
+
+                   span{
+                    margin-inline: 0.5rem;
+                    font: 1em sans-serif;
+                    font-weight: 500;
+                   }
+
+                   &:hover{
+                    cursor: pointer;
+                   }
+                 
+               }
+               
+              
+            }
+            button{
+                padding: 0.5rem;
+                background-color: $primary;
+                border: none;
+                color: $secondary;
+                border-radius: 4px;
+                font-weight: 500;
+                font-size: medium;
+                text-transform: uppercase;
+                margin-block: 1rem;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: $Darkprimary;
+                   }
+            }
+
+        }
+
+        .alreadyhas{
+
+            p{
+                font-weight: 400;
+                font-size: small;
+            }
+        }
+    }
+}

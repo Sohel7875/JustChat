@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+   height:100vh;
+   width: 100%;
+   overflow: hidden;
+
+
+     
+
+    @media screen and (max-width:768px) {
+        .container{
+            display: flex;
+           height: 100vh;
+           width: 100%;
+        }
+        
+       .Chat{
+        display: none;
+       }
+        
+    }
+    
+   
+
+
+    
+
+}
+// .container {
+//     display: flex;
+//     height: 100vh;
+//     width: 100%;
+//     overflow: hidden;
+//   }
+  
+//   /* Add media query for screens with a maximum width of 768px (adjust as needed) */
+//   @media screen and (max-width: 768px) {
+//     .container {
+//       flex-direction: column; /* Stack elements vertically on small screens */
+//     }
+//   }
